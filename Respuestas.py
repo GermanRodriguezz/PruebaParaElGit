@@ -26,7 +26,7 @@ answers = [
 # Índice de la respuesta correcta para cada pregunta, el el  mismo orden que las preguntas
 correct_answers_index = [1, 2, 0, 3, 1]
 
-questions_to_ask = random.choices(list(zip(questions, answers, correct_answers_index)), k=3) # ESTO GENERA UNA LISTA DE TUPLAS    
+questions_to_ask = random.sample(list(zip(questions, answers, correct_answers_index)), k=3) # ESTO GENERA UNA LISTA DE TUPLAS    
 
 # DONDE LAS TUPLAS QUE ESTAN DENTRO DE LAS LISTAS CONTIENEN LAS OPCIONES DE LAS PREGUNTAS,LAS RESPUESTAS Y LOS INDICES
 # LA TUPLA 1 CONTIENE A LA PREGUNTA, CON SU RESPUESTA Y EL INDICE DE LA RESPUESTA CORRECTA
