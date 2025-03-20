@@ -3,6 +3,7 @@ import string
 import sys
 letras = string.ascii_letters
 digitos = string.digits
+puntaje = 0
 # Preguntas para el juego
 questions = [
 "¿Qué función se usa para obtener la longitud de una  cadena en Python?",
@@ -40,10 +41,13 @@ for _ in range(3):
             if (user_answer) == correct_answers_index[question_index]:
             # Se verifica si la respuesta es correcta
                 print("¡Correcto!")
+                puntaje += 1
+                print('sumo un puntito')
                 break
-            elif (user_answer) > 3:
-                print('Respuesta invalida, no esta en el rango de respuestas!')
-                sys.exit(1) 
+            elif user_answer != correct_answers_index[question_index] or user_answer > 3 :
+                print('Respuesta no correcta!')
+                puntaje = puntaje - 0.5
+                print('se desconto 0.5 puntos')
         else :
             print('Se ingreso un string')
             sys.exit(1)
