@@ -1,6 +1,6 @@
-def comparar(palabra,lista):       #esta funcion recorre cada lista de mi tupla de descripciones y verifica si se encuentra alguna palabra pasada por parametro
-    for elem in lista :
-        if palabra in elem.lower().split() : #paso a minuscula la palabra de la lista y las separo con el .split() para que compare con la palabra exacta
+def comparar(palabra,lista):       #esta funcion recorre cada lista de mi tupla de descripciones y verifica si se encuentra la palabra pasada por parametro
+    for elem in lista :             # me guardo en elem los elementos de la lista,osea cada palabra
+        if palabra in elem.lower().split() : #paso a minuscula la palabra, las separo con el .split(), comparo con la palabra exacta
             return True
     else :
         return False
