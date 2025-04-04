@@ -5,11 +5,11 @@ def comparar(palabra,lista):       #esta funcion recorre cada lista de mi tupla 
     else :
         return False
 
-def conteo(descrip):  
+def conteo(descrip):
     m = 0
     e = 0
     c = 0
-    for lista in descrip :      #esta funcion le manda la palabra a buscar a la lista y si retorna true va acumulara en el valor de cada clave 1+
+    for lista in descrip :   # cada lista de mi tupla se guardara en mi variable lista
         print('recorrera la lista ', lista)
         if comparar('música',lista) :
             m += 1
@@ -22,10 +22,10 @@ def conteo(descrip):
         if comparar('charla',lista):
             c += 1
             print('sumo c')
-    menciones = {'musica' : m,
+    menciones = {'musica' : m,      # diccionario donde guardare en las claves: que seran las palabras a buscar, la veces que aparecieron
                 'entretenimiento' : e,
                 'charla' : c}
-    print('Menciones de musica :' ,menciones['musica'] )
+    print('Menciones de musica :' ,menciones['musica'])
     print('Menciones de entretenimiento :' ,menciones['entretenimiento'])
     print('Menciones de charla : ',menciones['charla'])
         

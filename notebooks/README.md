@@ -13,3 +13,8 @@
 6) Debemos instalar las dependecias con la instruccion "pip install - r requirements.txt" en la terminal.
 
 7) Ya estamos preparados para ejecutar el programa!
+
+Importante : Una vez que nos dejo abrir el programa dentro del Visual Studio Code, recordar que podemos ejecutar el programa 
+a traves del boton de play que se encuentra arriba a la izquierda de cada bloque de codigo. Ya que los ejercicios se encuentran
+divididos por bloques. Ademas podemos limpiar la terminal y reiniciar el kernel cada vez que querramos ejecutar el codigo para una mejor
+ejecucion!
